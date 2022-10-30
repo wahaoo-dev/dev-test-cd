@@ -14,7 +14,7 @@ spec:
         app: go-dev-test
     spec:
       containers:
-      - image: wahaoo/go-dev-test1111:latest
+      - image: golang:latest
         name: go-dev-test
         ports:
         - containerPort: 9001
