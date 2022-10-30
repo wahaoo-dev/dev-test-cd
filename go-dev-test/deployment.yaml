@@ -17,4 +17,4 @@ spec:
       - image: wahaoo/go-dev-test:latest
         name: go-dev-test
         ports:
-        - containerPort: 80
+        - containerPort: 9001
