@@ -4,7 +4,7 @@ metadata:
   name: go-dev-test
 spec:
   ports:
-  - port: 9001
-    targetPort: 9001
+  - port: 8080
+    targetPort: 8080
   selector:
     app: go-dev-test
