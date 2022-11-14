@@ -14,7 +14,7 @@ spec:
         app: go-dev-test:SNAPSHOT-23
     spec:
       containers:
-      - image: wahaoo/go-dev-test:SNAPSHOT-23
+      - image: wahaoo/go-dev-test:SNAPSHOT-24
         name: go-dev-test:SNAPSHOT-23
         ports:
         - containerPort: 9001
