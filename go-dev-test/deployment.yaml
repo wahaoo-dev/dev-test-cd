@@ -18,3 +18,10 @@ spec:
         name: go-dev-test
         ports:
         - containerPort: 8080
+        env:
+        - name: AppMode
+          value: release
+        resources:
+          limits:
+           cpu: 100m
+           memory: 0.1Gi
