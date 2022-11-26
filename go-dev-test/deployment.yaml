@@ -19,7 +19,7 @@ spec:
         ports:
         - containerPort: 8080
         env:
-        - name: AppMode
+        - name: APP_MODE
           value: release
         resources:
           limits:
