@@ -21,6 +21,8 @@ spec:
           env:
             - name: SERVER_APPMODE
               value: release
+            - name: SERVER_DBHOST
+              value: "mysql"
           resources:
             limits:
               cpu: 50m
