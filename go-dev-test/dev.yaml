@@ -14,33 +14,33 @@ spec:
         app: go-dev-test
     spec:
       containers:
-      - image: wahaoo/go-dev-test:SNAPSHOT-26
-        name: go-dev-test
-        ports:
-        - containerPort: 8080
-        env:
-        - name: SERVER_APPMODE
-          value: release
-        resources:
-          limits:
-           cpu: 50m
-           memory: 50Mi
-#       containers:
-#       - image: mysql:latest
-#         name: mysql
-#         ports:
-#         - containerPort: 3306
-#         env:
-#         - name: MYSQL_ROOT_PASSWORD
-#           value: waha1234
-#         volumeMounts:
-#             - name: mysql-persistent-storage
-#               mountPath: /var/lib/mysql
-#         resources:
-#           limits:
-#            cpu: 100m
-#            memory: 512Mi
-#       volumes:
-#         - name: mysql-persistent-storage
-#           persistentVolumeClaim:
-#             claimName: mysql-pv-claim 
+        - image: wahaoo/go-dev-test:SNAPSHOT-26
+          name: go-dev-test
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SERVER_APPMODE
+              value: release
+          resources:
+            limits:
+              cpu: 50m
+              memory: 50Mi
+        # mysql
+        - image: mysql:latest
+          name: mysql
+          ports:
+            - containerPort: 3306
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: waha1234
+          volumeMounts:
+            - name: mysql-persistent-storage
+              mountPath: /var/lib/mysql
+          resources:
+            limits:
+              cpu: 100m
+              memory: 512Mi
+      volumes:
+        - name: mysql-persistent-storage
+          persistentVolumeClaim:
+            claimName: mysql-pv-claim
