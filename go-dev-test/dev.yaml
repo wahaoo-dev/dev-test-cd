@@ -22,7 +22,7 @@ spec:
             - name: SERVER_APPMODE
               value: release
             - name: SERVER_DBHOST
-              value: "mysql"
+              value: mysql:3306
           resources:
             limits:
               cpu: 50m
