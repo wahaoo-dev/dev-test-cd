@@ -23,5 +23,5 @@ spec:
           value: release
         resources:
           limits:
-           cpu: 100m
+           cpu: 50m
            memory: 50Mi
