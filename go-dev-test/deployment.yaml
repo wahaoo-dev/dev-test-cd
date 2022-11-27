@@ -25,3 +25,22 @@ spec:
           limits:
            cpu: 50m
            memory: 50Mi
+#       containers:
+#       - image: mysql:latest
+#         name: mysql
+#         ports:
+#         - containerPort: 3306
+#         env:
+#         - name: MYSQL_ROOT_PASSWORD
+#           value: waha1234
+#         volumeMounts:
+#             - name: mysql-persistent-storage
+#               mountPath: /var/lib/mysql
+#         resources:
+#           limits:
+#            cpu: 100m
+#            memory: 512Mi
+#       volumes:
+#         - name: mysql-persistent-storage
+#           persistentVolumeClaim:
+#             claimName: mysql-pv-claim 
